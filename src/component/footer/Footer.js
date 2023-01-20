@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
@@ -9,13 +10,13 @@ export default function Footer() {
             >
                 <div>Copyright 2022 Learn with Sumit.</div>
                 <div>
-                    <a
-                        href="https://youtube.com/learnwithsumit"
+                    <Link
+                        to="https://youtube.com/learnwithsumit"
                         target="_blank"
                         rel="noreferrer"
                     >
                         YouTube Channel
-                    </a>
+                    </Link>
                 </div>
             </div>
         </section>

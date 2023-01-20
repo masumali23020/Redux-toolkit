@@ -10,11 +10,7 @@ export default function VideosGrid() {
                     className="grid grid-cols-12 gap-4 max-w-7xl mx-auto px-5 lg:px-0 min-h-[300px]"
                 >
                     <VideoGridItem />
-                    <VideoGridItem />
-                    <VideoGridItem />
-                    <VideoGridItem />
-                    <VideoGridItem />
-                    <VideoGridItem />
+                  
                     
                     
 
