@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Error() {
+export default function Error({error}) {
   return (
     
-         <div className="col-span-12">some error happened</div>
+         <div className="mx-auto col-span-12">{error} </div>
     
   )
 }
