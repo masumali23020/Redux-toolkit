@@ -10,7 +10,7 @@ import RelatedVideoList from '../component/relatedVideo/RelatedVideoList'
 import { fetchVideo } from '../features/video/videoSlice'
 
 export default function Video() {
-  const {video, isLoading, isError, error} = useSelector(state => state.video)
+  const {video, isLoading, isError, error, id, tags} = useSelector(state => state.video)
 
   const {link, title} = video || {}
 
@@ -37,7 +37,7 @@ export default function Video() {
         <VideoPlayer link={link} title={title} />
         <Description video={video} />
         </div>
-        <RelatedVideoList />
+        <RelatedVideoList curentVideoid={id} tags={tags} />
 
 
    
